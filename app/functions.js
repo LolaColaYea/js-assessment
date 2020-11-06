@@ -12,11 +12,11 @@ exports.functionsAnswers = {
   },
 
   functionFunction: function(str) {
-    function b(str1) {
-      var result = str+', '+str1;
+    function functioniInsideFunction(str2) {
+      var result = str+', '+str2;
       return result
     }
-    return b
+    return functioniInsideFunction
   },
 
   makeClosures: function(arr, fn) {

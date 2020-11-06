@@ -9,18 +9,23 @@ exports = typeof window === 'undefined' ? global : window;
 
 exports.bestPracticesAnswers = {
   globals: function() {
-    myObject = {
-      name: 'Jory'
-    };
+    var myObject = { 
+    greeting: 'Hola'
+  }
 
-    return myObject;
+  return myObject;
   },
 
   parseInt: function(num) {
-    return parseInt(num);
+    var parsed = parseInt(num, 10);
+    if (Number.isNaN(parsed)) {
+      return 0;
+    }
+    return parsed;
   },
 
   identity: function(val1, val2) {
-
+    var result = val1 === val2;
+    return result;
   }
 };

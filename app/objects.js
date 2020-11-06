@@ -1,7 +1,7 @@
 exports = typeof window === 'undefined' ? global : window;
 
 exports.objectsAnswers = {
-  alterContext: function(fn, obj) {
+alterContext: function(fn, obj) {
     var result = fn.call(obj);
     return result 
   },
@@ -11,7 +11,6 @@ exports.objectsAnswers = {
   },
 
   iterate: function(obj) {
-
     var arr = [];
 
     for (var key in obj) {
